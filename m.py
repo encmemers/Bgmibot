@@ -329,7 +329,7 @@ Pr-ice List:
 Day-->150 Rs
 Week-->900 Rs
 Month-->1600 Rs
-By Indian Watchdogs @Indian_Hackers_Team
+By Indian Watchdogs @Ekauva1
 '''
     bot.reply_to(message, response)
 
