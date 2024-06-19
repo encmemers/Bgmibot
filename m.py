@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#By Indian Watchdogs @Indian_Hackers_Team
+#By @Ekaiva1
 
 import telebot
 import subprocess
@@ -375,4 +375,4 @@ def broadcast_message(message):
 
 
 bot.polling()
-#By Indian Watchdogs @Indian_Hackers_Team
+#By @Ekaiva1
